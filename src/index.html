@@ -11,9 +11,9 @@
 
     <section id="hero">
       <div class="wrapper">
-        <div class="grid md:grid-cols-2">
+        <div class="flex">
           <!-- left content -->
-          <div class="flex flex-col space-y-6">
+          <div class="flex flex-col space-y-6 w-full md:w-3/5">
             <h6 class="sub-heading">WE HELP YOU</h6>
             <h1 class="max-w-md leading-tight">
               Affordable and Efficient call center solution
@@ -42,24 +42,26 @@
                 <h4 class="text-white border-l-4 border-primary pl-3 max-w-xs">
                   Call Us
                 </h4>
-                <p class="text-white">+88 01958 424000</p>
+                <p class="text-white text-sm">+88 01958 424000</p>
               </div>
               <!-- right content -->
               <div class="flex flex-col space-y-4">
                 <h4 class="text-white border-l-4 border-primary pl-3 max-w-xs">
                   Email Us
                 </h4>
-                <p class="text-white">info@suffixcallcenter.com</p>
+                <p class="text-white text-sm">info@suffixcallcenter.com</p>
               </div>
             </div>
           </div>
           <!-- right content -->
-          <img
-            src="./image/hover-img.jpg"
-            alt=""
-            class="w-full object-cover image-round hidden md:block"
-            style="height: 720px"
-          />
+          <div class="md:w-2/5">
+            <img
+              src="./image/hover-img.jpg"
+              alt=""
+              class="w-full image-round hidden md:block"
+              style="height: 720px"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -169,7 +171,7 @@
     </section>
     <!-- Service Section -->
     <section>
-      <div class="wrapper">
+      <div class="wrapper pb-36">
         <div class="flex flex-col space-y-3 text-center">
           <h6 class="sub-heading">OUR SERVICES</h6>
           <h1 class="leading-tight">What Service We Offer</h1>
@@ -179,14 +181,14 @@
           </p>
         </div>
 
-        <div
-          class="grid md:grid-cols-2 gap-6 lg:grid-cols-3 mt-16 lg:gap-6 md:gap-2"
-        >
-          <div class="space-y-3 shadow-md p-8 border rounded-lg">
+        <div class="grid gap-6 md:grid-cols-3 mt-16 place-content-center">
+          <div
+            class="flex flex-col justify-between space-y-3 shadow-md p-8 border rounded-lg"
+          >
             <h4 class="font-semibold border-l-4 border-primary pl-3">
               Inbound Call Center
             </h4>
-            <p>
+            <p class="text-sm">
               Dedicated and hardworking agents who are working tirelessly to
               answer all queries about your company.
             </p>
@@ -244,13 +246,15 @@
               </div>
             </div>
           </div>
-          <div class="space-y-3 shadow-md p-8 border rounded-lg">
+          <div
+            class="flex flex-col justify-between space-y-3 shadow-md p-8 border rounded-lg"
+          >
             <h4 class="font-semibold border-l-4 border-primary pl-3">
-              Inbound Call Center
+              Outbound Calls
             </h4>
-            <p>
-              Dedicated and hardworking agents who are working tirelessly to
-              answer all queries about your company.
+            <p class="text-sm">
+              Let customers know about your products/services via our charming
+              agents.
             </p>
             <div>
               <div class="flex space-x-2">
@@ -268,7 +272,7 @@
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p class="text-base text-black">Answering Service</p>
+                <p class="text-base text-black">Telemarketing</p>
               </div>
               <div class="flex space-x-2">
                 <svg
@@ -285,7 +289,7 @@
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p class="text-base text-black">Customer Support Service</p>
+                <p class="text-base text-black">Promotional Offers</p>
               </div>
               <div class="flex space-x-2">
                 <svg
@@ -302,17 +306,19 @@
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p class="text-base text-black">Technical Support Service</p>
+                <p class="text-base text-black">Voice Blast</p>
               </div>
             </div>
           </div>
-          <div class="space-y-3 shadow-md p-8 border rounded-lg">
+          <div
+            class="flex flex-col justify-between space-y-3 shadow-md p-8 border rounded-lg"
+          >
             <h4 class="font-semibold border-l-4 border-primary pl-3">
-              Inbound Call Center
+              Live Chat Support
             </h4>
-            <p>
-              Dedicated and hardworking agents who are working tirelessly to
-              answer all queries about your company.
+            <p class="text-sm">
+              Group of smart and charismatic agents are always online to provice
+              live chat services.
             </p>
             <div>
               <div class="flex space-x-2">
@@ -330,7 +336,24 @@
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p class="text-base text-black">Answering Service</p>
+                <p class="text-base text-black">Enquiry Handling</p>
+              </div>
+              <div class="flex space-x-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <p class="text-base text-black">Help Desk Service</p>
               </div>
               <div class="flex space-x-2">
                 <svg
@@ -348,23 +371,6 @@
                   />
                 </svg>
                 <p class="text-base text-black">Customer Support Service</p>
-              </div>
-              <div class="flex space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 text-primary"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <p class="text-base text-black">Technical Support Service</p>
               </div>
             </div>
           </div>
@@ -373,7 +379,7 @@
     </section>
 
     <!-- Why choose us -->
-    <section class="bg-black">
+    <section class="bg-black pb-36">
       <div class="wrapper flex flex-col space-y-16">
         <div>
           <h6 class="sub-heading text-white">Why Choose Us</h6>
@@ -412,7 +418,7 @@
             </div>
             <img
               src="./image/choose-use.jpg"
-              class="h-80 w-[calc(100%-100px)] object-cover image-round"
+              class="h-80 w-full md:w-[calc(100%-100px)] object-cover image-round"
               alt=""
             />
           </div>
@@ -421,7 +427,7 @@
     </section>
     <!-- About -->
     <section id="about">
-      <div class="wrapper">
+      <div class="wrapper pb-36">
         <div class="grid md:grid-cols-3 gap-11">
           <div class="">
             <img
@@ -444,7 +450,7 @@
             <div class="grid md:grid-cols-2 gap-11">
               <!-- left -->
               <div class="flex flex-col space-y-4 justify-center">
-                <div class="flex space-x-4">
+                <div class="flex space-x-2 items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-8 w-8 text-primary"
@@ -525,7 +531,7 @@
     </section>
     <!-- CTA -->
     <section>
-      <div class="container mx-auto px-6 pb-44 md:px-36">
+      <div class="container mx-auto px-6 pb-36">
         <div
           class="flex flex-col space-y-8 items-center text-center px-8 justify-center py-28 image-round object-cover"
           style="
@@ -538,14 +544,18 @@
           "
         >
           <h1 class="text-white max-w-4xl">
-            Need an Experienced Call Center Service? Contact Us
+            Need an Experienced Call Center Service?
           </h1>
+          <p class="text-white max-w-xl">
+            You can find the best call center solutions with just a few clicks!
+            Please contact us right away, we would love to hear from you!
+          </p>
           <div>
             <button
               type="button"
               class="py-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 px-4 sm:px-12 inline-flex border-white justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-primary text-white hover:bg-white hover:border hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg"
             >
-              Contact Us
+              Get Started
             </button>
           </div>
         </div>
@@ -571,13 +581,55 @@
           </div>
           <div>
             <div class="flex flex-col space-y-3">
-              <h4 class="text-white">Our Services</h4>
-              <a href="#"><p>+88 01958 424000</p></a>
+              <h4 class="text-white">Contact</h4>
               <a href="#"
-                ><p>Sun - Thu : 9 am - 7 pm</p></a
+                ><p class="flex space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    />
+                  </svg>
+                  <span>+88 01958 424000</span>
+                </p></a
               >
               <a href="#"
-                ><p>info@suffixcallcenter.com</p></a
+                ><p class="flex space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"
+                    /></svg
+                  ><span>Sun - Thu : 9 am - 7 pm</span>
+                </p></a
+              >
+              <a href="#"
+                ><p class="flex space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <span>info@suffixcallcenter.com</span>
+                </p></a
               >
             </div>
           </div>
