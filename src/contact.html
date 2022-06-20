@@ -90,30 +90,36 @@
         </div>
         <!-- form -->
         <div>
+          <div id="formError"></div>
           <form class="flex flex-col space-y-7" id="form">
             <div class="grid lg:grid-cols-2 gap-6">
-              <input required type="text" name="firstName" value="" required class="form-control" placeholder="First Name" />
-              <input required type="text" name="lastName" value="" required class="form-control" placeholder="Last Name" />
-              <input required type="email" name="email" value="" required class="form-control" placeholder="Email address" />
-              <select required name="services" value="" required class="form-control" aria-label="Default select example">
+              <input required type="text" name="firstName" value="" required class="form-control"
+                placeholder="First Name" />
+              <input required type="text" name="lastName" value="" required class="form-control"
+                placeholder="Last Name" />
+              <input required type="email" name="email" value="" required class="form-control"
+                placeholder="Email address" />
+              <select required name="services" value="" required class="form-control"
+                aria-label="Default select example">
                 <option selected class="text-gray-600">
                   Choose Services
                 </option>
-                <option value="1">Inbound Call Center</option>
-                <option value="2">Outbound Call Center</option>
-                <option value="3">Live Chat Support</option>
+                <option value="Inbound Call Center">Inbound Call Center</option>
+                <option value="Outbound Call Center">Outbound Call Center</option>
+                <option value="Live Chat Support">Live Chat Support</option>
               </select>
             </div>
 
             <textarea required name="message" class="form-control" rows="3" placeholder="Message"></textarea>
 
             <div>
-              <button id="sendData" type="submit" onclick="sendmail()" type="submit"
-                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 py-3 px-12 inline-flex justify-center items-center gap-2 rounded-lg border border-transparent font-semibold bg-black text-white hover:bg-primary hover:border hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg">
+              <button id="sendData" type="submit" type="submit"
+                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 py-3 px-12 inline-flex justify-center items-center gap-2 rounded-lg border border-transparent font-semibold bg-black text-white hover:bg-primary hover:border hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg disabled:bg-slate-700">
                 Send
               </button>
             </div>
           </form>
+         
         </div>
       </div>
     </div>
