@@ -18,7 +18,6 @@ $("#form").submit(function (e) {
 
   emailjs.send("service_s0blfc8", "template_5fpj54m", json).then(
     function (res) {
-      alert("Sent!");
       $("#form").trigger("reset");
       $("#sendData").attr("disabled", false);
       $("#sendData").html("Send");

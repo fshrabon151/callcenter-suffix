@@ -92,10 +92,10 @@
         <div>
           <form class="flex flex-col space-y-7" id="form">
             <div class="grid lg:grid-cols-2 gap-6">
-              <input type="text" name="firstName" value="" required class="form-control" placeholder="First Name" />
-              <input type="text" name="lastName" value="" required class="form-control" placeholder="Last Name" />
-              <input type="email" name="email" value="" required class="form-control" placeholder="Email address" />
-              <select name="services" value="" required class="form-control" aria-label="Default select example">
+              <input required type="text" name="firstName" value="" required class="form-control" placeholder="First Name" />
+              <input required type="text" name="lastName" value="" required class="form-control" placeholder="Last Name" />
+              <input required type="email" name="email" value="" required class="form-control" placeholder="Email address" />
+              <select required name="services" value="" required class="form-control" aria-label="Default select example">
                 <option selected class="text-gray-600">
                   Choose Services
                 </option>
@@ -105,7 +105,7 @@
               </select>
             </div>
 
-            <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+            <textarea required name="message" class="form-control" rows="3" placeholder="Message"></textarea>
 
             <div>
               <button id="sendData" type="submit" onclick="sendmail()" type="submit"
