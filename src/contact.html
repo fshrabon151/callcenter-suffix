@@ -8,12 +8,12 @@
 
   <body class="font-sora">
     <header class="fixed w-full bg-white shadow-sm">
-      <div class="container mx-auto px-6 py-6 md:px-28">
+      <div class="container mx-auto px-6 py-6 lg:px-28">
         <div class="flex justify-between items-center">
           <a href="index.html">
             <img src="./image/logo.png" width="130" alt="homepage-logo" />
           </a>
-          <div class="space-x-11 hidden md:flex menu-content">
+          <div class="space-x-11 hidden lg:flex menu-content">
             <a
               href="index.html"
               class="nav-link font-semibold hover:text-primary index.html"
@@ -41,7 +41,7 @@
           <!-- mobile -->
           <div
             id="menu-btn"
-            class="flex justify-center items-center cursor-pointer p-3 rounded-md hover:ring-4 md:hidden"
+            class="flex justify-center items-center cursor-pointer p-3 rounded-md hover:ring-4 lg:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
         </div>
         <div
           id="menu-sm"
-          class="hidden menu-content justify-between space-y-6 items-center flex-col bg-white p-8 rounded-xl border-primary shadow-md my-5 md:hidden"
+          class="hidden menu-content justify-between space-y-6 items-center flex-col bg-white p-8 rounded-xl border-primary shadow-md my-5 lg:hidden"
         >
           <a href="index.html" class="nav-link-sm index.html">Home</a>
           <a href="index.html#about" class="nav-link-sm">About</a>
@@ -70,10 +70,10 @@
         </div>
       </div>
     </header>
-    <div class="py-11 md:py-6"></div>
+    <div class="py-11 lg:py-6"></div>
     <section>
       <div
-        class="flex flex-col space-y-8 items-start justify-center px-8 py-20 md:py-28 object-cover"
+        class="flex flex-col space-y-8 items-start justify-center px-8 py-20 lg:py-28 object-cover"
         style="
           background-image: linear-gradient(#1a1affb5, #1a1affb5),
             url('./image/contact.jpg');
@@ -83,14 +83,14 @@
           background-attachment: fixed;
         "
       >
-        <div class="container mx-auto md:py-20 px-6 md:px-28">
+        <div class="container mx-auto lg:py-20 px-6 lg:px-28">
           <h1 class="text-white">Contact Us</h1>
         </div>
       </div>
     </section>
     <section>
       <div class="wrapper">
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid lg:grid-cols-2 gap-6">
           <!-- left content -->
           <div class="flex flex-col space-y-6 w-full">
             <h6 class="sub-heading">Get in Touch</h6>
@@ -105,7 +105,7 @@
 
             <!-- Contact card -->
             <div
-              class="grid gap-11 py-11 rounded-2xl md:rounded-r-none md:grid-cols-2"
+              class="grid gap-11 py-11 rounded-2xl lg:rounded-r-none lg:grid-cols-2"
             >
               <!-- left content -->
               <div class="flex flex-col space-y-4">
@@ -124,7 +124,7 @@
           <!-- form -->
           <div>
             <form class="flex flex-col space-y-7">
-              <div class="grid md:grid-cols-2 gap-6">
+              <div class="grid lg:grid-cols-2 gap-6">
                 <input
                   type="text"
                   class="form-control"
@@ -162,7 +162,7 @@
               <div>
                 <button
                   type="submit"
-                  class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 py-3 md:px-4 px-12 inline-flex justify-center items-center gap-2 rounded-lg border border-transparent font-semibold bg-black text-white hover:bg-primary hover:border hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg"
+                  class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 py-3 lg:px-4 px-12 inline-flex justify-center items-center gap-2 rounded-lg border border-transparent font-semibold bg-black text-white hover:bg-primary hover:border hover:border-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg"
                 >
                   Send
                 </button>
@@ -171,16 +171,33 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto pt-16">
-        <div class="flex flex-col items-center space-y-6 text-center">
+      <div class="container mx-auto pt-16 px-6 lg:px-28">
+        <div
+          class="flex flex-col item-start lg:items-center space-y-6 lg:text-center"
+        >
           <h6 class="sub-heading">LOCATION</h6>
           <h1 class="leading-tight">Our Location</h1>
           <p class="max-w-3xl text-base">
             Cha-70,70/A, Rupayan Millennium Square (9A), Progoti Sharoni, North
             Badda, Gulshan, Dhaka-1212, Bangladesh
           </p>
-          <div class="flex items-center space-x-6">
+          <div class="grid gap-6 lg:grid-cols-2">
             <p class="flex space-x-3 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-primary"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                />
+              </svg>
+              <span class="text-black font-semibold text-base"
+                >+88 01958 424000</span
+              >
+            </p>
+            <p class="flex space-x-3 lg:items-center lg:text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 text-primary"
@@ -196,21 +213,6 @@
               </svg>
               <span class="text-black font-semibold text-base"
                 >info@suffixcallcenter.com</span
-              >
-            </p>
-            <p class="flex space-x-3 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-primary"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                />
-              </svg>
-              <span class="text-black font-semibold text-base"
-                >+88 01958 424000</span
               >
             </p>
           </div>
@@ -238,8 +240,8 @@
     </section>
 
     <footer class="bg-black">
-      <div class="container mx-auto pt-24 pb-20 px-6 md:px-36">
-        <div class="grid gap-6 md:grid-cols-3">
+      <div class="container mx-auto pt-24 pb-20 px-6 lg:px-36">
+        <div class="grid gap-6 lg:grid-cols-3">
           <div class="flex flex-col space-y-8">
             <img src="./image/logo2.png" width="130" alt="" />
             <p>
