@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
   },
   "keywords": [],
   "author": "",
