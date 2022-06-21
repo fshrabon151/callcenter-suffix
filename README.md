@@ -2,6 +2,8 @@
 
 In the project directory, you can run:
 
+### `npm install`
+To install all node dependencies
 ### `npm run watch`
 
 Runs the app in the watch mode.\

@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link href="./output.css" rel="stylesheet" />
   </head>
 
   <body class="font-sora">
-    <header class="fixed w-full bg-white shadow-sm">
+    <header class="fixed w-full bg-white shadow-sm z-50">
       <div class="container mx-auto px-6 py-6 lg:px-28">
         <div class="flex justify-between items-center">
           <a href="index.html">
@@ -72,13 +74,13 @@
     </header>
     <!-- Hero section -->
 
-    <section id="hero">
+    <section id="hero" data-aos="fade-up">
       <div class="wrapper">
         <div class="flex">
           <!-- left content -->
           <div class="flex flex-col space-y-6 w-full lg:w-3/5">
             <h6 class="sub-heading">WE PROVIDE</h6>
-            <h1 class="max-w-md leading-tight">
+            <h1 class="max-w-md leading-tight" data-aos="fade-up">
               Affordable and Efficient call center solution
             </h1>
             <p class="max-w-lg">
@@ -132,7 +134,7 @@
     <section id="about">
       <div class="wrapper">
         <div class="grid lg:grid-cols-3 gap-11">
-          <div class="">
+          <div data-aos="fade-right" data-aos-duration="1000">
             <img
               src="./image/about-img.jpg"
               class="mx-auto image-round"
@@ -142,7 +144,7 @@
 
           <div class="flex flex-col space-y-6 lg:col-span-2">
             <h6 class="sub-heading">ABOUT US</h6>
-            <h1 class="leading-tight">
+            <h1 class="leading-tight" data-aos="fade-up">
               A World-class, dynamic call center service
             </h1>
             <p>
@@ -203,7 +205,7 @@
     </section>
     <!-- counter -->
     <section>
-      <div class="wrapper grid lg:grid-cols-3 gap-6">
+      <div class="wrapper grid lg:grid-cols-3 gap-6" data-aos="fade-up">
         <!-- count 1 -->
         <div class="flex flex-col space-y-3 text-center">
           <h1 class="text-primary lg:text-6xl">5,000 +</h1>
@@ -237,14 +239,19 @@
       <div class="wrapper pb-36">
         <div class="flex flex-col space-y-3 text-center">
           <h6 class="sub-heading">OUR SERVICES</h6>
-          <h1 class="leading-tight">What Service We Offer</h1>
+          <h1 class="leading-tight" data-aos="fade-up">
+            What Service We Offer
+          </h1>
           <p>
             We never say no to anything! We are here for all your needs. All you
             have to do is tell.
           </p>
         </div>
 
-        <div class="grid gap-6 lg:grid-cols-3 mt-16 place-content-center">
+        <div
+          class="grid gap-6 lg:grid-cols-3 mt-16 place-content-center"
+          data-aos="fade-left"
+        >
           <div
             class="flex flex-col justify-between space-y-3 shadow-md p-8 border rounded-lg"
           >
@@ -446,14 +453,14 @@
       <div class="wrapper flex flex-col space-y-16">
         <div class="flex flex-col space-y-6">
           <h6 class="sub-heading text-white">Why Choose Us</h6>
-          <h1 class="leading-tight text-white max-w-4xl">
+          <h1 class="leading-tight text-white max-w-4xl" data-aos="fade-up">
             We Are Focused On Making Your Process A Success
           </h1>
         </div>
         <div class="lg:w-6/8">
           <div class="grid gap-16 lg:grid-cols-2">
             <!-- left content 1 -->
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-4" data-aos="fade-right">
               <h3 class="text-white border-l-4 border-primary pl-3 max-w-xs">
                 24/7 Consultant Availability
               </h3>
@@ -462,7 +469,7 @@
               </p>
             </div>
             <!-- left content 2 -->
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-4" data-aos="fade-left">
               <h3 class="text-white border-l-4 border-primary pl-3 max-w-xs">
                 Multilingual Customer Service
               </h3>
@@ -471,7 +478,7 @@
               </p>
             </div>
             <!-- left content 3 -->
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-4" data-aos="fade-right">
               <h3 class="text-white border-l-4 border-primary pl-3 max-w-xs">
                 Live Chat Support Ready
               </h3>
@@ -482,6 +489,110 @@
             <img
               src="./image/choose-use.jpg"
               class="h-80 w-full lg:w-[calc(100%-100px)] object-cover image-round"
+              data-aos="fade-left"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="how-works">
+      <div class="wrapper">
+        <div class="grid lg:grid-cols-3 gap-11">
+          <div class="flex flex-col space-y-6 lg:col-span-2">
+            <h6 class="sub-heading">HOW WE WORK</h6>
+            <h1 class="leading-tight" data-aos="fade-up">
+              We Are Here To Get Your Business To The Next Level
+            </h1>
+            <p>
+              Our business development team is always thinking about new ideas
+              to increase productivity by creating the best strategy.
+            </p>
+            <!-- infography -->
+            <div class="grid lg:grid-cols-2 gap-8">
+              <!-- left -->
+              <div class="flex flex-col space-y-4 justify-center">
+                <div class="flex space-x-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h5>Planning</h5>
+                </div>
+                <p>Creating the best action plan.</p>
+              </div>
+              <!-- right -->
+              <div class="flex flex-col space-y-4 justify-center">
+                <div class="flex space-x-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h5>Briefing</h5>
+                </div>
+                <p>Explaining the plan to the team.</p>
+              </div>
+              <!-- right -->
+              <div class="flex flex-col space-y-4 justify-center">
+                <div class="flex space-x-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h5>Execution</h5>
+                </div>
+                <p>Start working according to the plan</p>
+              </div>
+              <!-- right -->
+              <div class="flex flex-col space-y-4 justify-center">
+                <div class="flex space-x-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-primary"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <h5>Evaluation</h5>
+                </div>
+                <p>Improvise the plan based on situation.</p>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="order-first lg:order-last">
+            <img
+              src="./image/work-img.jpg"
+              class="mx-auto image-round"
               alt=""
             />
           </div>
@@ -502,7 +613,7 @@
             background-attachment: fixed;
           "
         >
-          <h1 class="text-white max-w-4xl">
+          <h1 class="text-white max-w-4xl" data-aos="zoom-out-right">
             Need an Experienced Call Center Service?
           </h1>
           <p class="text-white max-w-xl">
@@ -511,6 +622,7 @@
           </p>
           <div>
             <button
+            data-aos="zoom-out-left"
               type="button"
               class="py-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 px-4 sm:px-12 inline-flex border-white justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-primary text-white hover:bg-white hover:border hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-blue dark:focus:ring-offset-gray-800 text-lg"
             >
@@ -612,6 +724,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
