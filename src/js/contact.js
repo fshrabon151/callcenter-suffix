@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
   if (!isEmpty(formData["g-recaptcha-response"])) {
     submitBtn.innerText = "Sending...";
     submitBtn.setAttribute("disabled", true);
-    emailjs.send("service_s0blfc8", "template_5fpj54m", formData).then(
+    emailjs.send("yourName", "YourPAssword", formData).then(
       () => {
         submitBtn.innerText = "Send";
         submitBtn.setAttribute("disabled", false);
